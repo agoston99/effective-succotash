@@ -4,7 +4,7 @@
 alias xfreerdp='xfreerdp /dynamic-resolution +clipboard /drive:home,/home/'
 
 # also add alias to bashrc for future sessions
-INJECTION_LINE="\n\nalias xfreerdp='xfreerdp /dynamic-resolution +clipboard /drive:home,/home/'\n"
+INJECTION_LINE="\n\nalias xfreerdp='xfreerdp /dynamic-resolution +clipboard /drive:home,$HOME/'\n"
 
 # Check if the line is already in .bashrc
 if ! grep -Fxq "$INJECTION_LINE" "$HOME/.bashrc"; then
