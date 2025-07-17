@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # xfreerdp optimizations: resizable window, clipboard, attached home folder 
-alias xfreerdp='xfreerdp /dynamic-resolution +clipboard /drive:home,/home/'
+alias xfreerdp='xfreerdp /dynamic-resolution +clipboard /drive:home,$HOME/'
 
 # also add alias to bashrc for future sessions
 INJECTION_LINE="\n\nalias xfreerdp='xfreerdp /dynamic-resolution +clipboard /drive:home,$HOME/'\n"
