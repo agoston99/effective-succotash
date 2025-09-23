@@ -7,7 +7,7 @@ alias xfreerdp='xfreerdp /dynamic-resolution +clipboard /drive:home,$HOME/'
 export HTB_PW='HTB_@cademy_stdnt!'
 
 # tell user about modifications
-echo 'xfreerdp alias set, HTB password in \$HTB_PW variable'
+echo 'xfreerdp alias set, HTB password in $HTB_PW variable'
 
 # also add alias to bashrc for future sessions
 INJECTION_LINE="\n\nalias xfreerdp='xfreerdp /dynamic-resolution +clipboard /drive:home,$HOME/'\nexport HTB_PW='HTB_@cademy_stdnt!'\necho 'xfreerdp alias set, HTB password in \$HTB_PW variable'\n"
