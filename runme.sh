@@ -13,7 +13,7 @@ echo 'xfreerdp alias set, HTB password in $HTB_PW variable'
 INJECTION_LINE="\n\nalias xfreerdp='xfreerdp /dynamic-resolution +clipboard /drive:home,$HOME/'\nexport HTB_PW='HTB_@cademy_stdnt!'\necho 'xfreerdp alias set, HTB password in \$HTB_PW variable'\n"
 
 # Check if the line is already in .bashrc
-if ! grep -Fxq "HTB_@cademy_stdnt!" "$HOME/.bashrc"; then
+if ! grep -Fq "HTB_@cademy_stdnt!" "$HOME/.bashrc"; then
     echo -e "$INJECTION_LINE" >> "$HOME/.bashrc"
 fi
 
